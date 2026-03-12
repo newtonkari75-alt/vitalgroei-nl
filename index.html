@@ -5,136 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     
+    <!-- Script de Rastreamento / Lógica -->
+    <script src="https://cdn.raldoeira.com/code/8300-b1facca2-52a5-4d7d-ba3b-bec9e3979f3d"></script>
+
     <!-- FAVICON -->
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <!-- =========================
-         SEO HEAD (Global/EN Default)
+         SEO HEAD
          ========================= -->
-    <title id="meta-title">XP69 – 70% Discount Today | Vitality & Well-being | Free Shipping</title>
-    <meta name="description" id="meta-desc" content="XP69: A Daily Superfood blend with 13 Natural Ingredients designed for vitality and internal balance. 70% discount today, free shipping and 30-day money-back guarantee." />
-    <meta name="keywords" id="meta-keywords" content="XP69, Wellness, Vitality, Natural Supplement, Energy, Digestion, Superfood, Netherlands" />
+    <title id="meta-title">XP69 – 46% Discount Today | Male Energy & Performance | Free Shipping</title>
+    <meta name="description" id="meta-desc" content="XP69: High-performance formula with 13 Natural Ingredients. 46% discount today, free shipping and 60-day money-back guarantee." />
     <meta name="robots" content="index,follow" />
 
-    <!-- UI Assets -->
+    <!-- Assets UI -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/feather-icons"></script>
 
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #ffffff; color: #1e293b; }
         .star-filled { color: #f59e0b; fill: #f59e0b; }
-        .hero-section-bg { position: relative; background-color: #f8fafc; overflow: hidden; min-height: 80vh; display: flex; align-items: center; }
-        .hero-overlay-img {
-            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background-image: url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80');
-            background-size: cover; background-position: center; opacity: 0.1; z-index: 0;
+        
+        /* Seção Hero Clean */
+        .hero-section-bg { 
+            position: relative; 
+            background-color: #ffffff; 
+            overflow: hidden; 
+            min-height: 80vh; 
+            display: flex; 
+            align-items: center; 
         }
+
+        /* Fundo discreto com padrão suave */
+        .hero-overlay-pattern {
+            position: absolute; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%;
+            background-image: radial-gradient(#e2e8f0 0.5px, transparent 0.5px);
+            background-size: 24px 24px;
+            opacity: 0.5;
+            z-index: 0;
+        }
+
         .hero-container { position: relative; z-index: 10; }
         .reveal { opacity: 0; transform: translateY(20px); transition: all 0.6s ease-out; }
         .reveal.active { opacity: 1; transform: translateY(0); }
+        
+        /* Painel Glass Light */
         .glass-panel {
-            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(255, 255, 255, 0.8); 
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px); 
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
         }
+        
         .modal-open { overflow: hidden; }
         
-        /* Brand Color: Premium Blue/Slate */
-        .brand-bg { background-color: #1e293b; }
-        .brand-text { color: #1e293b; }
-        .brand-border { border-color: #1e293b; }
+        /* Cor da Marca: #234899 */
+        .brand-bg { background-color: #234899; }
+        .brand-text { color: #234899; }
+        .brand-border { border-color: #234899; }
         
-        .policy-table { width: 100%; border-collapse: collapse; font-size: 0.75rem; margin: 1rem 0; }
-        .policy-table th, .policy-table td { border: 1px solid #e5e7eb; padding: 8px; text-align: left; }
-        .policy-table th { background-color: #f9fafb; font-weight: bold; }
-
+        /* Botão CTA Principal */
         .cta-button {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background-color: #234899;
         }
         .cta-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 10px 25px -5px rgba(35, 72, 153, 0.4);
+            filter: brightness(1.1);
+        }
+
+        /* Sombra Suave para o Produto */
+        .product-shadow {
+            filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.12));
+        }
+
+        .offer-badge {
+            background: #f1f5f9;
+            color: #234899;
+            border: 1px solid #e2e8f0;
         }
     </style>
 </head>
-<body class="text-slate-800 relative">
+<body class="antialiased">
 
-    <header class="sticky top-0 bg-white/90 backdrop-blur-md z-40 border-b border-gray-100">
+    <!-- Cabeçalho -->
+    <header class="sticky top-0 bg-white/80 backdrop-blur-md z-50 border-b border-slate-100">
         <div class="container mx-auto flex justify-center items-center p-4">
-            <!-- New Logo Image -->
-            <img src="images/imgi_9_xp69_logo.png" alt="XP69 Logo" class="h-12 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-            <span class="text-2xl font-extrabold tracking-tighter brand-text hidden">XP69<span class="text-blue-500">.</span></span>
+            <img src="images/imgi_9_xp69_logo.png" alt="XP69 Logo" class="h-10 md:h-12 w-auto">
         </div>
     </header>
 
     <main>
         <section id="order" class="hero-section-bg" aria-label="Order Section">
-            <div class="hero-overlay-img"></div>
+            <div class="hero-overlay-pattern"></div>
             
-            <div class="container mx-auto px-6 py-12 hero-container">
-                <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="container mx-auto px-6 py-12 md:py-20 hero-container">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     
-                    <!-- Left Column: Content -->
+                    <!-- Coluna de Texto -->
                     <div class="text-center md:text-left reveal">
-                        <div class="glass-panel rounded-full px-4 py-1.5 mb-6 inline-flex items-center gap-2 shadow-sm">
-                            <div class="flex items-center gap-0.5">
+                        <div class="offer-badge rounded-full px-4 py-1.5 mb-8 inline-flex items-center gap-2 shadow-sm">
+                            <div class="flex items-center">
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                                 <i class="star-filled w-3.5 h-3.5" data-feather="star"></i>
                             </div>
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-500" data-i18n="offer">AANBIEDING: 70% KORTING</span>
+                            <span class="text-[11px] font-bold uppercase tracking-widest" data-i18n="offer">AANBIEDING: 46% KORTING</span>
                         </div>
 
-                        <h1 class="text-4xl md:text-6xl font-black mb-6 leading-[1.1] tracking-tight text-slate-900" data-i18n="h1">
-                            XP69:<br> Energie, Vitaliteit<br> & Balans
+                        <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-[1.15] tracking-tight text-slate-900" data-i18n="h1">
+                            Meer Energie, Vitaliteit & Balans
                         </h1>
                         
-                        <p class="text-lg md:text-xl mb-8 text-slate-600 leading-relaxed max-w-lg" data-i18n="p-hero">
-                            Ontdek de kracht van de natuur. XP69 is geformuleerd met 13 hoogwaardige ingrediënten om uw stofwisseling en dagelijks welzijn te ondersteunen.
+                        <p class="text-lg md:text-xl mb-10 text-slate-600 leading-relaxed max-w-lg" data-i18n="p-hero">
+                            XP69 ondersteunt uw dagelijkse energie en vitaliteit met een zorgvuldig samengestelde formule. Ontwikkeld om uw welzijn en natuurlijke balans elke dag te ondersteunen.
                         </p>
                         
-                        <div class="space-y-4 mb-10 text-left">
-                            <div class="flex items-center gap-3">
-                                <div class="bg-green-100 text-green-600 rounded-full p-1">
+                        <div class="space-y-5 mb-12 text-left inline-block">
+                            <div class="flex items-center gap-4 group">
+                                <div class="bg-blue-50 text-[#234899] rounded-full p-1.5 border border-blue-100">
                                     <i data-feather="check" class="w-4 h-4"></i>
                                 </div>
-                                <span class="font-semibold text-slate-700" data-i18n="list-1">Natuurlijke ondersteuning</span>
+                                <span class="font-semibold text-slate-700" data-i18n="list-1">Natuurlijke ondersteuning voor energie en vitaliteit</span>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <div class="bg-green-100 text-green-600 rounded-full p-1">
+                            <div class="flex items-center gap-4 group">
+                                <div class="bg-blue-50 text-[#234899] rounded-full p-1.5 border border-blue-100">
                                     <i data-feather="check" class="w-4 h-4"></i>
                                 </div>
-                                <span class="font-semibold text-slate-700" data-i18n="list-2">13 gecertificeerde ingrediënten</span>
+                                <span class="font-semibold text-slate-700" data-i18n="list-2">Zorgvuldig samengestelde formule</span>
                             </div>
-                            <div class="flex items-center gap-3">
-                                <div class="bg-green-100 text-green-600 rounded-full p-1">
+                            <div class="flex items-center gap-4 group">
+                                <div class="bg-blue-50 text-[#234899] rounded-full p-1.5 border border-blue-100">
                                     <i data-feather="check" class="w-4 h-4"></i>
                                 </div>
-                                <span class="font-semibold text-slate-700" data-i18n="list-3">Geld-terug-garantie</span>
+                                <span class="font-semibold text-slate-700" data-i18n="list-3">60 dagen geld-terug-garantie</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Right Column: Product & CTA -->
+                    <!-- Coluna de Imagem do Produto -->
                     <div class="reveal flex flex-col items-center">
-                        <div class="relative mb-10 group">
-                            <div class="absolute -inset-4 bg-blue-100/50 rounded-full blur-3xl z-0 transition-opacity group-hover:opacity-100 opacity-70"></div>
+                        <div class="relative mb-12 group">
+                            <!-- Efeito de sombra leve e sutil -->
+                            <div class="absolute -inset-10 bg-blue-50 rounded-full blur-3xl z-0 opacity-60 group-hover:opacity-100 transition-opacity"></div>
                             
-                            <!-- New Product Image -->
-                            <img src="images/imgi_4_2.png" alt="XP69 Product" class="relative z-10 w-full max-w-xs h-auto drop-shadow-2xl transform hover:scale-105 transition-all duration-500" onerror="this.src='https://via.placeholder.com/400x500?text=XP69+Product';">
+                            <!-- Imagem do Produto com Sombra Suave -->
+                            <img src="images/imgi_4_2.png" alt="XP69 Supplement" class="relative z-10 w-full max-w-[320px] h-auto product-shadow transform hover:scale-105 transition-all duration-700">
                             
-                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-slate-900/90 backdrop-blur-sm text-white py-1.5 px-6 rounded-full text-[10px] font-bold tracking-widest z-20">LIMITED EDITION</div>
+                            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 brand-bg text-white py-1.5 px-6 rounded-full text-[10px] font-bold tracking-[0.2em] z-20 shadow-lg border border-white/20">PREMIUM FORMULA</div>
                         </div>
 
-                        <div class="w-full max-w-sm space-y-4">
-                            <p class="text-center font-bold text-slate-400 uppercase tracking-[0.2em] text-[10px]" data-i18n="choose">SELECTEER UW LAND:</p>
-                            
-                            <a href="https://ktzof.doctormedved.com/l" class="cta-button flex items-center justify-between px-8 py-5 brand-bg text-white rounded-2xl font-bold text-lg group shadow-xl shadow-slate-200">
-                                <span data-i18n="nl">Nederland</span>
-                                <i data-feather="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                            </a>
+                        <div class="w-full max-w-sm space-y-6">
+                            <div class="text-center">
+                                <p class="font-bold text-slate-400 uppercase tracking-widest text-[10px] mb-4" data-i18n="choose">SELECTEER UW LAND:</p>
+                                
+                                <a href="https://ktzof.doctormedved.com/l" class="cta-button flex items-center justify-between px-10 py-6 text-white rounded-2xl font-bold text-xl group shadow-lg w-full">
+                                    <span data-i18n="nl">Nederland</span>
+                                    <div class="bg-white/10 rounded-full p-1.5 group-hover:translate-x-1 transition-transform">
+                                        <i data-feather="arrow-right" class="w-5 h-5"></i>
+                                    </div>
+                                </a>
+                                
+                                <p class="mt-6 text-slate-400 text-xs font-medium flex items-center justify-center gap-2">
+                                    <i data-feather="truck" class="w-4 h-4"></i>
+                                    Gratis discrete verzending
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -145,88 +190,92 @@
 
     <footer class="bg-slate-50 text-slate-500 py-16 border-t border-slate-100">
         <div class="container mx-auto px-6 text-center">
-            <div class="mb-8">
-                <!-- Footer Logo -->
-                <img src="images/imgi_9_xp69_logo.png" alt="XP69 Logo" class="h-8 w-auto mx-auto mb-4 opacity-80" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-                <span class="text-xl font-black text-slate-900 hidden">XP69<span class="text-blue-500">.</span></span>
-                <p class="mt-2 text-sm" data-i18n="footer-copy">&copy; 2026 XP69. Natuurlijke Welzijnsoplossingen.</p>
+            <div class="mb-10">
+                <img src="images/imgi_9_xp69_logo.png" alt="XP69 Logo" class="h-8 w-auto mx-auto mb-6 opacity-60">
+                <p class="mt-2 text-sm text-slate-500 font-medium" data-i18n="footer-copy">&copy; 2026 XP69. Advanced Male Supplements.</p>
             </div>
             
-            <div class="flex justify-center flex-wrap gap-6 mb-12 text-[11px] font-bold uppercase tracking-widest">
-                <button onclick="openModal('terms')" class="hover:text-slate-900 transition-colors" data-i18n="btn-terms">Voorwaarden</button>
-                <button onclick="openModal('privacy')" class="hover:text-slate-900 transition-colors" data-i18n="btn-privacy">Privacy</button>
-                <button onclick="openModal('shipping')" class="hover:text-slate-900 transition-colors" data-i18n="btn-shipping">Verzending</button>
-                <button onclick="openModal('returns')" class="hover:text-slate-900 transition-colors" data-i18n="btn-returns">Retouren</button>
+            <div class="flex justify-center flex-wrap gap-8 mb-12 text-[11px] font-bold uppercase tracking-widest">
+                <button onclick="openModal('terms')" class="hover:text-[#234899] transition-colors" data-i18n="btn-terms">Voorwaarden</button>
+                <button onclick="openModal('privacy')" class="hover:text-[#234899] transition-colors" data-i18n="btn-privacy">Privacy</button>
+                <button onclick="openModal('shipping')" class="hover:text-[#234899] transition-colors" data-i18n="btn-shipping">Verzending</button>
+                <button onclick="openModal('returns')" class="hover:text-[#234899] transition-colors" data-i18n="btn-returns">Retouren</button>
             </div>
 
-            <div class="max-w-2xl mx-auto text-[10px] leading-relaxed opacity-60 space-y-4" data-i18n="footer-disclaimer">
+            <div class="max-w-3xl mx-auto text-[10px] leading-relaxed opacity-50 space-y-4" data-i18n="footer-disclaimer">
                 <p>Deze site is geen onderdeel van Google™ of Meta Inc. XP69 wordt gedistribueerd door Fonslife Trading FZCO.</p>
-                <p>Resultaten kunnen per persoon verschillen. Raadpleeg een deskundige voor gebruik.</p>
+                <p>Resultaten kunnen per individu verschillen. Supplementen zijn geen vervanging voor een gevarieerde voeding.</p>
             </div>
         </div>
     </footer>
 
-    <!-- MODAL -->
+    <!-- MODAIS -->
     <div id="policy-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true">
-        <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm" onclick="closeModal()"></div>
+        <div class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm" onclick="closeModal()"></div>
         <div class="fixed inset-0 z-10 overflow-y-auto">
-            <div class="flex min-h-full items-center justify-center p-4">
-                <div class="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden">
-                    <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
-                        <h3 class="font-bold text-slate-900 uppercase tracking-tight" id="modal-title">Legal Details</h3>
-                        <button onclick="closeModal()" class="p-2 hover:bg-slate-100 rounded-full transition-colors">
+            <div class="flex min-h-full items-center justify-center p-6">
+                <div class="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl flex flex-col overflow-hidden border border-slate-100">
+                    <div class="px-8 py-5 border-b border-slate-50 flex justify-between items-center bg-slate-50/50">
+                        <h3 class="font-bold brand-text uppercase tracking-widest text-xs" id="modal-title">Legal Details</h3>
+                        <button onclick="closeModal()" class="p-2 hover:bg-slate-200 rounded-full transition-colors text-slate-400">
                             <i data-feather="x" class="w-5 h-5"></i>
                         </button>
                     </div>
                     <div class="p-8 overflow-y-auto max-h-[70vh] text-sm text-slate-600 leading-relaxed" id="modal-content-area"></div>
+                    <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex justify-end">
+                        <button onclick="closeModal()" class="brand-bg text-white px-6 py-2 rounded-xl text-xs font-bold uppercase tracking-widest">Sluiten</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <script>
+        // Inicialização de Ícones
         feather.replace();
 
+        // Animação de Revelação ao Rolar
         const revealElements = () => {
             const reveals = document.querySelectorAll(".reveal");
             reveals.forEach(el => {
                 const windowHeight = window.innerHeight;
                 const elementTop = el.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 50) { el.classList.add("active"); }
+                if (elementTop < windowHeight - 100) { el.classList.add("active"); }
             });
         };
         window.addEventListener("scroll", revealElements);
         window.addEventListener("load", revealElements);
 
+        // Dicionário de Traduções
         const translations = {
             nl: {
-                title: "XP69 – 70% Korting Vandaag | Vitaliteit & Welzijn",
-                desc: "XP69: Een dagelijkse superfood-mix met 13 natuurlijke ingrediënten voor vitaliteit. 70% korting vandaag.",
-                offer: "BEPERKTE AANBIEDING: 70% KORTING",
-                h1: "XP69:<br> Energie, Vitaliteit<br> & Balans",
-                "p-hero": "Ontdek de kracht van de natuur. XP69 is geformuleerd met 13 hoogwaardige ingrediënten om uw stofwisseling en dagelijks welzijn te ondersteunen.",
-                "list-1": "Natuurlijke ondersteuning",
-                "list-2": "13 gecertificeerde ingrediënten",
-                "list-3": "30 dagen geld-terug-garantie",
+                title: "XP69 – 46% Korting Vandaag | Meer Energie, Vitaliteit & Balans",
+                desc: "XP69 ondersteunt uw dagelijkse energie en vitaliteit met een zorgvuldig samengestelde formule. Nu 46% korting.",
+                offer: "AANBIEDING: 46% KORTING",
+                h1: "Meer Energie, Vitaliteit & Balans",
+                "p-hero": "XP69 ondersteunt uw dagelijkse energie en vitaliteit met een zorgvuldig samengestelde formule. Ontwikkeld om uw welzijn en natuurlijke balans elke dag te ondersteunen.",
+                "list-1": "Natuurlijke ondersteuning voor energie en vitaliteit",
+                "list-2": "Zorgvuldig samengestelde formule",
+                "list-3": "60 dagen geld-terug-garantie",
                 choose: "SELECTEER UW LAND:",
                 nl: "Nederland",
                 "btn-terms": "Voorwaarden", "btn-privacy": "Privacy", "btn-shipping": "Verzending", "btn-returns": "Retouren",
-                "footer-copy": "&copy; 2026 XP69. Natuurlijke Welzijnsoplossingen.",
+                "footer-copy": "&copy; 2026 XP69. Advanced Male Supplements.",
                 "footer-disclaimer": "<p>Deze site is geen onderdeel van Google™ of Meta Inc. XP69 wordt gedistribueerd door Fonslife Trading FZCO.</p><p>Resultaten kunnen per persoon verschillen.</p>"
             },
             fr: {
-                title: "XP69 – -70% Aujourd'hui | Vitalité & Bien-être",
-                desc: "XP69 : Mélange de super-aliments avec 13 ingrédients naturels. -70% aujourd'hui.",
-                offer: "OFFRE LIMITÉE : -70%",
-                h1: "XP69 :<br> Énergie, Vitalité<br> & Équilibre",
-                "p-hero": "Découvrez la puissance de la nature. XP69 est formulé avec 13 ingrédients premium.",
-                "list-1": "Soutien naturel",
-                "list-2": "13 ingrédients certifiés",
-                "list-3": "Garantie satisfait ou remboursé",
+                title: "XP69 – -46% Aujourd'hui | Plus d'Énergie, Vitalité & Équilibre",
+                desc: "XP69 soutient votre énergie quotidienne. -46% aujourd'hui et garantie 60 jours.",
+                offer: "OFFRE LIMITÉE : -46%",
+                h1: "Plus d'Énergie, Vitalité & Équilibre",
+                "p-hero": "XP69 soutient votre énergie et votre vitalité quotidienne avec une formule soigneusement élaborée.",
+                "list-1": "Soutien naturel pour l'énergie",
+                "list-2": "Formule soigneusement élaborée",
+                "list-3": "Garantie de 60 jours",
                 choose: "SÉLECTIONNEZ VOTRE PAYS :",
                 nl: "Pays-Bas",
                 "btn-terms": "Conditions", "btn-privacy": "Confidentialité", "btn-shipping": "Livraison", "btn-returns": "Retours",
-                "footer-copy": "&copy; 2026 XP69. Solutions de Bien-être Naturelles.",
+                "footer-copy": "&copy; 2026 XP69. Performance Masculine.",
                 "footer-disclaimer": "<p>Ce site ne fait pas partie de Google™ ou Meta Inc.</p>"
             }
         };
@@ -245,15 +294,16 @@
         }
         window.addEventListener('DOMContentLoaded', applyTranslation);
 
+        // Lógica dos Modais
         const modal = document.getElementById('policy-modal');
         const modalTitle = document.getElementById('modal-title');
         const modalContent = document.getElementById('modal-content-area');
 
         const modalData = {
-            terms: { title: "Voorwaarden", content: "<p>Belangrijke voorwaarden met betrekking tot uw XP69 aankoop. 30 dagen geld-terug-garantie.</p>" },
-            privacy: { title: "Privacy", content: "<p>Wij beschermen uw gegevens volgens de AVG/GDPR richtlijnen.</p>" },
-            shipping: { title: "Verzending", content: "<p>Gratis verzending naar Nederland. Levering binnen 3-5 werkdagen.</p>" },
-            returns: { title: "Retouren", content: "<p>Retourneer ongeopende artikelen binnen 30 dagen voor een volledige terugbetaling.</p>" }
+            terms: { title: "Voorwaarden", content: "<p>Algemene voorwaarden voor XP69 Performance. Alleen voor volwassenen (18+).</p>" },
+            privacy: { title: "Privacy", content: "<p>Uw privacy is onze prioriteit. Gegevens worden veilig verwerkt volgens de AVG wetgeving.</p>" },
+            shipping: { title: "Verzending", content: "<p>Gratis discrete verzending binnen Nederland. Levertijd 3-5 werkdagen.</p>" },
+            returns: { title: "Retouren", content: "<p>60 dagen niet-goed-geld-terug garantie op ongeopende producten.</p>" }
         };
 
         function openModal(type) {
